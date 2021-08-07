@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="top-heading">
+      <p>SPLI</p>
+      <p>TTER</p>
+    </h1>
+  
+    <div class="card">
+      <div class="left">
+          <h3>Bill</h3>
+          <div class="input-holder">
+            <img src = "./images/icon-dollar.svg" alt="$"/>
+            <input type="number" name="bill" id="bill" placeholder="0">
+          </div>
+
+
+          <h3>Select tip %</h3>
+          <div class="selections">
+            <div id="five_discount">5%</div>
+            <div id="ten_discount">10%</div>
+            <div id="fifteen_discount">15%</div>
+            <div id="twenty_discount">20%</div>
+            <div id="twentyfive_discount">25%</div>
+            <input id="custom" placeholder="custom" type="number" />
+          </div>
+
+          <div class="people">
+            <h3>Number of People</h3>
+            <div class="input-holder">
+              <img src = "./images/icon-person.svg" alt="Person"/>
+              <input type="number" name="people" id="people" placeholder="0">
+            </div>
+          </div>
+      </div>
+      <div class="right">
+          <div class="tip-amount">
+            <div class="text">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+
+            <div class="amount" id="amount">
+              $4.27
+            </div>
+          </div>
+
+          <div class="tip-amount">
+            <div class="text">
+              <h3>Total</h3>
+            </div>
+
+            <div class="total_amount" id="total_amount">
+              $32.79
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Webbing my life</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
